@@ -23,10 +23,114 @@
   </head>
   <body>
     <!--=== HEADER ===-->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Diogo</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">Sobre Mim</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="work.html" class="nav__link">Portfólio</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="button">Contate Me</a>
+            </li>
+          </ul>
+
+          <!-- Close Button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+          <!-- Theme button -->
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!--=== MAIN ===-->
-    <main class="main"></main>
+    <main class="main">
+      <!--=== HOME ===-->
+      <section class="home section">
+        <div class="home__rectangle"></div>
+
+        <div class="home__container container grid">
+          <div class="home__perfil perfil">
+            <div class="perfil__content">
+              <img
+                src="assets/img/home-perfil.png"
+                alt=""
+                class="perfil__img"
+              />
+            </div>
+          </div>
+
+          <div class="home__content grid">
+            <div class="home__data grid">
+              <h1 class="home__name">Diogo Rodrigo</h1>
+
+              <h2 class="home__profession">Desenvolvedor Front-end</h2>
+
+              <div class="home__social">
+                <a
+                  href="https://api.whatsapp.com/send?phone=+5511981278140&text=Obrigado+por+entrar+em+contato.+Como+posso+ajudar+voc%C3%AA+hoje%3F%0A%0ASeu+nome+completo%0AO+motivo+do+seu+contato%0AQualquer+outra+informa%C3%A7%C3%A3o+relevante%0A%0AResponderei+o+mais+breve+poss%C3%ADvel.%0AAtenciosamente%2C%0A%5BDiogo+Rodrigo%5D"
+                  target="_blank"
+                  class="home__social-link"
+                >
+                  <i class="ri-whatsapp-fill"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/diogorodrigogalvao"
+                  target="_blank"
+                  class="home__social-link"
+                >
+                  <i class="ri-linkedin-box-fill"></i>
+                </a>
+
+                <a
+                  href="https://github.com/DiogooRodrigoo"
+                  target="_blank"
+                  class="home__social-link"
+                >
+                  <i class="ri-github-fill"></i>
+                </a>
+              </div>
+            </div>
+            <a
+              href="assets/pdf/Diogo-CV.pdf"
+              class="home__button button"
+              download=""
+              >Baixar CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--=== SERVICES ===-->
+      <section class="services section"></section>
+
+      <!--=== WORK ===-->
+      <section class="work section"></section>
+
+      <!--=== TESTIMONIAL ===-->
+      <section class="testimonial section"></section>
+    </main>
 
     <!--=== FOOTER ===-->
     <footer class="footer"></footer>
