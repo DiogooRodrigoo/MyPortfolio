@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=== FAVICON ===-->
-    <link rel="stylesheet" href="\" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favion.png"
+      type="image/x-icon"
+    />
 
     <!--=== REMIXICONS ===-->
     <link
@@ -65,8 +69,62 @@
 
     <!--=== MAIN ===-->
     <main class="main">
-      <!--=== ABOUT ===-->
-      <section class="about section"></section>
+      <!--=== CONTACT ===-->
+      <section class="contact section">
+        <h2 class="section__title">
+          Vamos Falar <br />
+          Sobre Seu Projeto
+        </h2>
+
+        <div class="contact__page container grid">
+          <form action="" class="contact__form grid" id="contact-form">
+            <div class="contact__group grid">
+              <div class="contact__box">
+                <input
+                  required
+                  type="text"
+                  name="user_name"
+                  id="name"
+                  class="contact__input"
+                  placeholder="Escreva seu nome"
+                />
+                <label for="name" class="contact__label">Primeiro Nome</label>
+              </div>
+
+              <div class="contact__box">
+                <input
+                  required
+                  type="email"
+                  name="user_email"
+                  id="email"
+                  class="contact__input"
+                  placeholder="Digite seu e-mail"
+                />
+                <label for="email" class="contact__label"
+                  >Endereço de e-mail</label
+                >
+              </div>
+            </div>
+
+            <div class="contact__box contact__area">
+              <textarea
+                required
+                name="user_message"
+                id="message"
+                class="contact__input"
+                placeholder="Escreva sua mensagem"
+              ></textarea>
+              <label for="message" class="contact__label">Mensagem</label>
+            </div>
+
+            <p class="contact__message" id="contact-message"></p>
+
+            <button class="contact__send button" type="submit">
+              Enviar mensagem
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!--=== FOOTER ===-->
@@ -75,8 +133,7 @@
     <script src="assets/js/main.js"></script>
 
     <!--=== EMAIL JS ===-->
-    <script src=""></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!--=== CONTACT JS ===-->
     <script src="assets/js/contact.js"></script>
   </body>
