@@ -7,13 +7,6 @@
 
   /*=== COLORS ===*/
   /*Color mode HSL(hue, saturation, lightness*/
-  /*
-    Change favorite color
-    Deafult: hsl(240, 90%, 60%)
-    Orange: hsl(14, 90%, 60%) - Blue: hsl(210, 90%, 50%)
-    Pink: hsl(356, 100%, 65%) - Grenn: hsl(162, 90%, 40%)
-  */
-
   --hue--color: 240;
   --first-color: hsl(var(--hue--color), 90%, 35%);
   --first-color-alt: hsl(var(--hue--color), 82%, 58%);
@@ -978,13 +971,12 @@ Color changes in some parts of the website, in dark theme
   }
 }
 
+/* For 2k resolutions (2048 x 1152, 2048 x 1536) */
 @media screen and (min-width: 1500px) {
   .home__rectangle {
     width: 33vw;
   }
 }
-
-/* For 2k resolutions (2048 x 1152, 2048 x 1536) */
 
 @media screen and (min-width: 2048px) {
   .home__rectangle {
