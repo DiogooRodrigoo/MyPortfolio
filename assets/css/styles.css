@@ -7,8 +7,8 @@
 
   /*=== COLORS ===*/
   /*Color mode HSL(hue, saturation, lightness*/
-  --hue--color: 240;
-  --first-color: hsl(var(--hue--color), 90%, 35%);
+  --hue--color: 238;
+  --first-color: hsl(var(--hue--color), 20%, 55%);
   --first-color-alt: hsl(var(--hue--color), 82%, 58%);
   --first-color-light: hsl(var(--hue--color), 40%, 80%);
   --title-color: hsl(var(--hue--color), 24%, 16%);
@@ -226,7 +226,44 @@ Color changes in some parts of the website, in dark theme
   align-items: center;
 }
 
+.container__logo {
+  position: relative;
+  width: 40%;
+  height: 60%;
+  background-color: var(--first-color);
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container__logo:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 50%;
+  background: linear-gradient(180deg, #09d1d4, #0524eb);
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container__logo::after {
+  content: "";
+  background-color: var(--first-color);
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+}
+
 .nav__logo {
+  z-index: 1;
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
   transition: color 0.4s;
@@ -296,7 +333,7 @@ Color changes in some parts of the website, in dark theme
   box-shadow: 0 2px 16px var(--shadow-color);
 }
 
-.bg-header :is(.nav__logo, .nav__toggle, .change-theme) {
+.bg-header :is(.nav__toggle, .change-theme) {
   color: var(--title-color);
 }
 
@@ -305,7 +342,7 @@ Color changes in some parts of the website, in dark theme
   background-color: var(--body-color);
 }
 
-.header-pages :is(.nav__logo, .nav__toggle, .change-theme) {
+.header-pages :is(.nav__toggle, .change-theme) {
   color: var(--text-color);
 }
 
@@ -819,6 +856,9 @@ Color changes in some parts of the website, in dark theme
     justify-self: center;
     margin-top: 1.5rem;
   }
+  .container__logo {
+    width: 20%;
+  }
 }
 
 /* For large devices */
@@ -862,7 +902,7 @@ Color changes in some parts of the website, in dark theme
     border-width: 20px;
   }
   .perfil__img {
-    width: 300px;
+    width: 320px;
   }
   .home__rectangle {
     width: 30vw;
